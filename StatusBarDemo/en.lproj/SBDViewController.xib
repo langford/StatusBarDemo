@@ -34,7 +34,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUIView" id="523615898">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="72783752">
@@ -46,7 +46,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{320, 20}</string>
 								<reference key="NSSuperview" ref="72783752"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="774585933"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -76,7 +75,6 @@
 						</array>
 						<string key="NSFrame">{{0, -20}, {320, 20}}</string>
 						<reference key="NSSuperview" ref="523615898"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="30356906"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor" id="360345508">
@@ -98,7 +96,6 @@
 										<int key="NSvFlags">301</int>
 										<string key="NSFrameSize">{300, 272}</string>
 										<reference key="NSSuperview" ref="305607782"/>
-										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="206106358"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<object class="NSColor" key="IBUIBackgroundColor" id="946902636">
@@ -121,8 +118,6 @@
 										<int key="NSvFlags">269</int>
 										<string key="NSFrame">{{0, 322}, {300, 21}}</string>
 										<reference key="NSSuperview" ref="305607782"/>
-										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
@@ -150,7 +145,6 @@
 										<int key="NSvFlags">301</int>
 										<string key="NSFrame">{{54, 84}, {193, 72}}</string>
 										<reference key="NSSuperview" ref="305607782"/>
-										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="617587056"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIOpaque">NO</bool>
@@ -184,7 +178,6 @@
 										<int key="NSvFlags">301</int>
 										<string key="NSFrame">{{93, 206}, {114, 72}}</string>
 										<reference key="NSSuperview" ref="305607782"/>
-										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="1060625957"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIOpaque">NO</bool>
@@ -206,7 +199,6 @@
 								</array>
 								<string key="NSFrame">{{10, 58}, {300, 356}}</string>
 								<reference key="NSSuperview" ref="774585933"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="4219032"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<reference key="IBUIBackgroundColor" ref="946902636"/>
@@ -216,7 +208,6 @@
 						</array>
 						<string key="NSFrameSize">{320, 548}</string>
 						<reference key="NSSuperview" ref="523615898"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="305607782"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">5</int>
@@ -249,8 +240,6 @@
 					</object>
 				</array>
 				<string key="NSFrame">{{0, 20}, {320, 548}}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="72783752"/>
 				<reference key="IBUIBackgroundColor" ref="360345508"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -450,6 +439,7 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="bearGroup">UIView</string>
 						<string key="boldClock">UILabel</string>
+						<string key="characterImage">UIImageView</string>
 						<string key="instructions">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -460,6 +450,10 @@
 						<object class="IBToOneOutletInfo" key="boldClock">
 							<string key="name">boldClock</string>
 							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="characterImage">
+							<string key="name">characterImage</string>
+							<string key="candidateClassName">UIImageView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="instructions">
 							<string key="name">instructions</string>
