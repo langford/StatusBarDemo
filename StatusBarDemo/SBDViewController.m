@@ -22,7 +22,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.boldClock.font = [UIFont boldSystemFontOfSize:10];
+    _boldClock.font = [UIFont boldSystemFontOfSize:14];
+    _boldClock.textColor = [UIColor colorWithRed:191.0/256.0 green:191.0/256.0 blue:191.0/256.0 alpha:1.0]; //match clock UI Grey
 }
 - (IBAction)pokeNose:(id)sender {
     if(_isAngry) return;
