@@ -38,6 +38,7 @@
     _boldClock.frame = CGRectMake(0,20,320,20);
     _bearGroup.userInteractionEnabled = NO; //don't let them fix the tie too fast.
     _characterImage.image = [UIImage imageNamed:@"angryBear"];
+    _boldClock.alpha = 1.0;
     [UIView animateWithDuration:0.5 animations:^{
         CGRect frame = _boldClock.frame;
         frame.origin.y = 0;
