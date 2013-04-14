@@ -35,7 +35,7 @@
     _boldClock.text = @"BEAR ANGRY!!! RUN!";
     _instructions.text = @"Fix tie to sooth me";
     
-    _boldClock.frame = CGRectMake(0,20,320,20); 
+    _boldClock.frame = CGRectMake(0,20,320,20);
     _bearGroup.userInteractionEnabled = NO; //don't let them fix the tie too fast.
     _characterImage.image = [UIImage imageNamed:@"angryBear"];
     [UIView animateWithDuration:0.5 animations:^{
@@ -50,7 +50,14 @@
 
 - (IBAction)fixTie:(id)sender{
     _isAngry = NO;
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    _bearGroup.userInteractionEnabled = NO;
+    [UIView animateWithDuration:0.5 animations:^{
+        _boldClock.alpha = 0.0;
+    } completion:^(BOOL finished){
+        _bearGroup.userInteractionEnabled = YES;
+        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    }];
+    
     _characterImage.image = [UIImage imageNamed:@"bear"];
     _instructions.text = @"Don't Poke My Nose";
 }
